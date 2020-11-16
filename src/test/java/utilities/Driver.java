@@ -1,5 +1,4 @@
-package utulities;
-
+package utilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,7 +10,9 @@ import java.util.concurrent.TimeUnit;
 public class Driver {
 
     public static WebDriver driver;
+
     public static WebDriver getDriver(){
+
         if(driver == null){
             switch (ConfigReader.getProperty("browser")){ // chrome // firefox
                 case "chrome":
@@ -42,6 +43,4 @@ public class Driver {
             driver = null;
         }
     }
-
-
 }
