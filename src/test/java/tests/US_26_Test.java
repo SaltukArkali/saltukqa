@@ -24,7 +24,6 @@ public class US_26_Test extends TestBase {
 
         wait.until(ExpectedConditions.elementToBeClickable(us26Page.resizablePage)).click();
 
-
     }
 
     @Test
@@ -92,9 +91,7 @@ public class US_26_Test extends TestBase {
         ReusableMethods.waitFor(1);
 
 
-
         soft.assertAll();
-
 
 
     }

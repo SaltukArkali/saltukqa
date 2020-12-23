@@ -26,8 +26,6 @@ public class US_27_Test extends TestBase {
         wait.until(ExpectedConditions.elementToBeClickable(us27.droppableLink)).click();
         ReusableMethods.waitFor(1);
 
-
-
     }
 
     @Test
@@ -38,7 +36,6 @@ public class US_27_Test extends TestBase {
         soft.assertTrue(us27.droppableLink.isEnabled());
 
         soft.assertAll();
-
     }
 
     @Test
@@ -55,12 +52,8 @@ public class US_27_Test extends TestBase {
             soft.assertEquals(w.getText(),droppedTitle[count]);
 
             count++;
-
         }
-
-
         soft.assertAll();
-
     }
 
     @Test
@@ -71,8 +64,8 @@ public class US_27_Test extends TestBase {
         actions.clickAndHold(us27.dragMeBox).moveToElement(us27.droppedBigBox).release().build().perform();
         soft.assertTrue(us27.droppedBigBox.getText().contains("Dropped!"));
         soft.assertAll();
-
     }
+
     @Test
     public void TC_154(){
         //Accept Tab'inin altinda "Acceptable"
@@ -91,7 +84,6 @@ public class US_27_Test extends TestBase {
         soft.assertEquals(backgroundColor,"#3cb371");
 
         soft.assertAll();
-
 
     }
 
@@ -113,9 +105,8 @@ public class US_27_Test extends TestBase {
         soft.assertEquals(backgroundColor,"#4682b4");
 
         soft.assertAll();
-
-
     }
+
     @Test
     public void TC_156(){
         //Accept Tab'inin altinda "Not Acceptable" kutucugunun
@@ -132,8 +123,8 @@ public class US_27_Test extends TestBase {
         soft.assertFalse(backgroundColor.contains("#4682b4"));
 
         soft.assertAll();
-
     }
+
     @Test
     public void TC_157(){
         //Prevent Propogation Tab'inin altinda "Drag me" kutucugunu ustteki  "Outer droppable"
@@ -215,8 +206,8 @@ public class US_27_Test extends TestBase {
         System.out.println(b);
 
         Assert.assertEquals(a,b);
-
     }
+
     @Test
     public void TC_160(){
 
@@ -235,9 +226,6 @@ public class US_27_Test extends TestBase {
 
         soft.assertAll();
 
-
-
     }
-
 
 }

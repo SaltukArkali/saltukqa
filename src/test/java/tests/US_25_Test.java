@@ -22,9 +22,8 @@ public class US_25_Test extends TestBase {
         wait.until(ExpectedConditions.elementToBeClickable(us25Page.interactionsCard)).click();
         actions.sendKeys(Keys.PAGE_DOWN).build().perform();
         wait.until(ExpectedConditions.elementToBeClickable(us25Page.selectableLink)).click();
-
-
     }
+
     @Test
     public void TC_142(){
         //TC142	-Selectable textinin tiklanildigini ve
@@ -32,12 +31,9 @@ public class US_25_Test extends TestBase {
 
         sof.assertTrue(us25Page.selectableLink.isEnabled());
         sof.assertTrue(us25Page.interactionHeadText.isDisplayed());
-
-
-
         sof.assertAll();
-
     }
+
     @Test
     public void TC_143(){
         //-Selectable texti tiklanildiginda;
@@ -62,10 +58,8 @@ public class US_25_Test extends TestBase {
         }
 
         sof.assertAll();
-
-
-
     }
+
     @Test
     public void TC_144(){
         //b. "List" ve "Grid" boxlarinin altinda,
@@ -84,10 +78,9 @@ public class US_25_Test extends TestBase {
 
         }
 
-
         sof.assertAll();
-
     }
+
     @Test
     public void TC_145(){
         //-"Cras justo"", "Dapibus ac facilisis in", "Morbi leo risus", "Porta ac consectetur ac"
@@ -106,10 +99,9 @@ public class US_25_Test extends TestBase {
 
         }
 
-
         sof.assertAll();
-
     }
+
     @Test
     public void TC_146(){
         //-"Grid" box'i tiklanildiginda "Grid" yazisinin siyah oldugunu dogrula.
@@ -136,7 +128,6 @@ public class US_25_Test extends TestBase {
 
             i++;
 
-
         }
 
         //Samet beyin  HashSet getLocation() ile farkli degerleri kurmak icin ...
@@ -157,12 +148,7 @@ public class US_25_Test extends TestBase {
 
         sof.assertAll();
 
-
-
-
     }
-
-
 
 
 }
