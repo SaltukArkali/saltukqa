@@ -75,7 +75,6 @@ public class US_25_Test extends TestBase {
             System.out.println(kutu.getText());
             sof.assertEquals(kutu.getText(),myTestData[i]);
             i++;
-
         }
 
         sof.assertAll();
@@ -96,9 +95,7 @@ public class US_25_Test extends TestBase {
             String mainPageTextColor= Color.fromString(box.getCssValue("background-color")).asHex();
             ReusableMethods.waitFor(3);
             sof.assertEquals(mainPageTextColor,"#ffffff");
-
         }
-
         sof.assertAll();
     }
 
@@ -142,13 +139,9 @@ public class US_25_Test extends TestBase {
         //Assert.assertEquals(dataX.size(), 3);
         //Assert.assertEquals(dataY.size(), 3);
 
-
-
         sof.assertEquals(i,9);
 
         sof.assertAll();
-
     }
-
 
 }
